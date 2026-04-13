@@ -1,36 +1,61 @@
-import { useState, useEffect } from 'react';
-import './App.css';
+import { useState, useEffect } from "react";
+import "./App.css";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
-  const [activeNav, setActiveNav] = useState('home');
+  const [activeNav, setActiveNav] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const smoothScroll = (id) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({ behavior: "smooth" });
     setActiveNav(id);
   };
 
   return (
     <div className="App">
       {/* Navigation */}
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="nav-container">
           <div className="nav-logo">John K</div>
           <ul className="nav-menu">
-            <li onClick={() => smoothScroll('home')} className={activeNav === 'home' ? 'active' : ''}>Home</li>
-            <li onClick={() => smoothScroll('about')} className={activeNav === 'about' ? 'active' : ''}>About</li>
-            <li onClick={() => smoothScroll('skills')} className={activeNav === 'skills' ? 'active' : ''}>Skills</li>
-            <li onClick={() => smoothScroll('projects')} className={activeNav === 'projects' ? 'active' : ''}>Projects</li>
-            <li onClick={() => smoothScroll('contact')} className={activeNav === 'contact' ? 'active' : ''}>Contact</li>
+            <li
+              onClick={() => smoothScroll("home")}
+              className={activeNav === "home" ? "active" : ""}
+            >
+              Home
+            </li>
+            <li
+              onClick={() => smoothScroll("about")}
+              className={activeNav === "about" ? "active" : ""}
+            >
+              About
+            </li>
+            <li
+              onClick={() => smoothScroll("skills")}
+              className={activeNav === "skills" ? "active" : ""}
+            >
+              Skills
+            </li>
+            <li
+              onClick={() => smoothScroll("projects")}
+              className={activeNav === "projects" ? "active" : ""}
+            >
+              Projects
+            </li>
+            <li
+              onClick={() => smoothScroll("contact")}
+              className={activeNav === "contact" ? "active" : ""}
+            >
+              Contact
+            </li>
           </ul>
         </div>
       </nav>
@@ -39,8 +64,15 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Frontend Developer</h1>
-          <p className="hero-subtitle">Building bold, creative web experiences with React, JavaScript & CSS</p>
-          <button className="cta-button" onClick={() => smoothScroll('projects')}>View My Work</button>
+          <p className="hero-subtitle">
+            Building bold, creative web experiences with React, JavaScript & CSS
+          </p>
+          <button
+            className="cta-button"
+            onClick={() => smoothScroll("projects")}
+          >
+            View My Work
+          </button>
         </div>
         <div className="hero-background">
           <div className="gradient-blob blob-1"></div>
@@ -54,13 +86,17 @@ function App() {
           <h2 className="section-title">About Me</h2>
           <div className="about-content">
             <p className="about-text">
-              Hi! I'm John, a passionate frontend developer just starting my career. I'm excited about creating beautiful, 
-              functional web applications that users love. With a strong foundation in JavaScript, HTML, CSS, and React, 
-              I'm constantly learning and pushing the boundaries of what's possible on the web.
+              Hi! I'm John, a passionate frontend developer just starting my
+              career. I'm excited about creating beautiful, functional web
+              applications that users love. With a strong foundation in
+              JavaScript, HTML, CSS, and React, I'm constantly learning and
+              pushing the boundaries of what's possible on the web.
             </p>
             <p className="about-text">
-              I love solving problems, writing clean code, and collaborating with teams to bring ideas to life. 
-              When I'm not coding, you'll find me exploring new technologies and contributing to open-source projects.
+              I love solving problems, writing clean code, and collaborating
+              with teams to bring ideas to life. When I'm not coding, you'll
+              find me exploring new technologies and contributing to open-source
+              projects.
             </p>
           </div>
         </div>
@@ -79,7 +115,9 @@ function App() {
             <div className="skill-card">
               <div className="skill-icon">✨</div>
               <h3>JavaScript</h3>
-              <p>ES6+, async/await, DOM manipulation, responsive interactions</p>
+              <p>
+                ES6+, async/await, DOM manipulation, responsive interactions
+              </p>
             </div>
             <div className="skill-card">
               <div className="skill-icon">🎨</div>
@@ -104,14 +142,21 @@ function App() {
               <div className="project-header"></div>
               <div className="project-content">
                 <h3>Project Title</h3>
-                <p>Brief description of your project. What problem did it solve? What technologies did you use?</p>
+                <p>
+                  Brief description of your project. What problem did it solve?
+                  What technologies did you use?
+                </p>
                 <div className="project-tags">
                   <span className="tag">React</span>
                   <span className="tag">JavaScript</span>
                 </div>
                 <div className="project-links">
-                  <a href="#projects" className="project-link">Live Demo</a>
-                  <a href="#projects" className="project-link">GitHub</a>
+                  <a href="#projects" className="project-link">
+                    Live Demo
+                  </a>
+                  <a href="#projects" className="project-link">
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -120,14 +165,21 @@ function App() {
               <div className="project-header"></div>
               <div className="project-content">
                 <h3>Project Title</h3>
-                <p>Brief description of your project. What problem did it solve? What technologies did you use?</p>
+                <p>
+                  Brief description of your project. What problem did it solve?
+                  What technologies did you use?
+                </p>
                 <div className="project-tags">
                   <span className="tag">React</span>
                   <span className="tag">CSS</span>
                 </div>
                 <div className="project-links">
-                  <a href="#projects" className="project-link">Live Demo</a>
-                  <a href="#projects" className="project-link">GitHub</a>
+                  <a href="#projects" className="project-link">
+                    Live Demo
+                  </a>
+                  <a href="#projects" className="project-link">
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -136,14 +188,21 @@ function App() {
               <div className="project-header"></div>
               <div className="project-content">
                 <h3>Project Title</h3>
-                <p>Brief description of your project. What problem did it solve? What technologies did you use?</p>
+                <p>
+                  Brief description of your project. What problem did it solve?
+                  What technologies did you use?
+                </p>
                 <div className="project-tags">
                   <span className="tag">JavaScript</span>
                   <span className="tag">HTML/CSS</span>
                 </div>
                 <div className="project-links">
-                  <a href="#projects" className="project-link">Live Demo</a>
-                  <a href="#projects" className="project-link">GitHub</a>
+                  <a href="#projects" className="project-link">
+                    Live Demo
+                  </a>
+                  <a href="#projects" className="project-link">
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -161,7 +220,10 @@ function App() {
               <div className="timeline-content">
                 <h3>First Role - Frontend Developer</h3>
                 <p className="timeline-date">Coming Soon</p>
-                <p>Seeking opportunities to grow my skills and contribute to innovative projects.</p>
+                <p>
+                  Seeking opportunities to grow my skills and contribute to
+                  innovative projects.
+                </p>
               </div>
             </div>
           </div>
@@ -172,13 +234,20 @@ function App() {
       <section id="contact" className="contact">
         <div className="section-container">
           <h2 className="section-title">Get In Touch</h2>
-          <p className="contact-subtitle">I'd love to hear from you! Feel free to reach out.</p>
+          <p className="contact-subtitle">
+            I'd love to hear from you! Feel free to reach out.
+          </p>
           <div className="contact-methods">
             <a href="mailto:johnkatana624@gmail.com" className="contact-card">
               <span className="contact-icon">📧</span>
               <span>johnkatana624@gmail.com</span>
             </a>
-            <a href="https://github.com/johnkatana624" target="_blank" rel="noopener noreferrer" className="contact-card">
+            <a
+              href="https://github.com/Katana-Junior"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-card"
+            >
               <span className="contact-icon">🐙</span>
               <span>GitHub</span>
             </a>
