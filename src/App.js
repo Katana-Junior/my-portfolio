@@ -24,7 +24,7 @@ function App() {
       {/* Navigation */}
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="nav-container">
-          <div className="nav-logo">John K</div>
+          <div className="nav-logo">Katana J</div>
           <ul className="nav-menu">
             <li
               onClick={() => smoothScroll("home")}
@@ -143,17 +143,15 @@ function App() {
               <div className="project-content">
                 <h3>Project Title</h3>
                 <p>
-                  Brief description of your project. What problem did it solve?
-                  What technologies did you use?
+                  See you soon! I'm currently working on an exciting project
+                  that will showcase my frontend development skills. Stay tuned
+                  for updates!
                 </p>
                 <div className="project-tags">
                   <span className="tag">React</span>
                   <span className="tag">JavaScript</span>
                 </div>
                 <div className="project-links">
-                  <a href="#projects" className="project-link">
-                    Live Demo
-                  </a>
                   <a href="#projects" className="project-link">
                     GitHub
                   </a>
@@ -164,10 +162,11 @@ function App() {
             <div className="project-card">
               <div className="project-header"></div>
               <div className="project-content">
-                <h3>Project Title</h3>
+                <h3>7TO7</h3>
                 <p>
-                  Brief description of your project. What problem did it solve?
-                  What technologies did you use?
+                  Project will be updated soon. Stay tuned for an exciting
+                  project that showcases my skills and creativity in frontend
+                  development.
                 </p>
                 <div className="project-tags">
                   <span className="tag">React</span>
@@ -175,9 +174,6 @@ function App() {
                 </div>
                 <div className="project-links">
                   <a href="#projects" className="project-link">
-                    Live Demo
-                  </a>
-                  <a href="#projects" className="project-link">
                     GitHub
                   </a>
                 </div>
@@ -189,17 +185,16 @@ function App() {
               <div className="project-content">
                 <h3>Project Title</h3>
                 <p>
-                  Brief description of your project. What problem did it solve?
-                  What technologies did you use?
+                  stay tuned for an exciting project that will showcase my
+                  frontend development skills and creativity. I'm currently
+                  working on something special that I can't wait to share with
+                  you all!
                 </p>
                 <div className="project-tags">
                   <span className="tag">JavaScript</span>
                   <span className="tag">HTML/CSS</span>
                 </div>
                 <div className="project-links">
-                  <a href="#projects" className="project-link">
-                    Live Demo
-                  </a>
                   <a href="#projects" className="project-link">
                     GitHub
                   </a>
