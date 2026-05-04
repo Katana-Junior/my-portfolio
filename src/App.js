@@ -153,7 +153,7 @@ function App() {
                 </div>
                 <div className="project-links">
                   <a href="#projects" className="project-link">
-                    GitHub
+                    View Project
                   </a>
                 </div>
               </div>
@@ -164,17 +164,25 @@ function App() {
               <div className="project-content">
                 <h3>7TO7</h3>
                 <p>
-                  Project will be updated soon. Stay tuned for an exciting
-                  project that showcases my skills and creativity in frontend
-                  development.
+                  7TO7 is a dynamic web application that allows users to explore
+                  and discover new content. With a sleek design and intuitive
+                  interface, 7TO7 provides an engaging user experience. Built
+                  with JavaScript, HTML, and CSS, this project demonstrates my
+                  ability to create responsive and interactive web applications.
                 </p>
                 <div className="project-tags">
-                  <span className="tag">React</span>
+                  <span className="tag">JavaScript</span>
+                  <span className="tag">HTML</span>
                   <span className="tag">CSS</span>
                 </div>
                 <div className="project-links">
-                  <a href="#projects" className="project-link">
-                    GitHub
+                  <a
+                    href="https://7to7.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    View Project
                   </a>
                 </div>
               </div>
@@ -196,7 +204,7 @@ function App() {
                 </div>
                 <div className="project-links">
                   <a href="#projects" className="project-link">
-                    GitHub
+                    View Project
                   </a>
                 </div>
               </div>
