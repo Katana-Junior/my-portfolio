@@ -191,19 +191,27 @@ function App() {
             <div className="project-card">
               <div className="project-header"></div>
               <div className="project-content">
-                <h3>Project Title</h3>
+                <h3>Asili safaris</h3>
                 <p>
-                  stay tuned for an exciting project that will showcase my
-                  frontend development skills and creativity. I'm currently
-                  working on something special that I can't wait to share with
-                  you all!
+                  Asili Safaris is a travel and tourism website that provides
+                  information about safari tours and packages. The website is
+                  designed to be visually appealing and user-friendly, allowing
+                  visitors to easily navigate through the available options and
+                  make bookings. Built with JavaScript, HTML, and CSS, this
+                  project showcases my skills in creating responsive and
+                  interactive web applications.
                 </p>
                 <div className="project-tags">
                   <span className="tag">JavaScript</span>
                   <span className="tag">HTML/CSS</span>
                 </div>
                 <div className="project-links">
-                  <a href="#projects" className="project-link">
+                  <a
+                    href="https://asili-safaris.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
                     View Project
                   </a>
                 </div>
