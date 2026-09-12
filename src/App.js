@@ -74,10 +74,14 @@ function App() {
             View My Work
           </button>
         </div>
-        <div className="hero-background">
-          <div className="gradient-blob blob-1"></div>
-          <div className="gradient-blob blob-2"></div>
-        </div>
+        <div
+          className="hero-background"
+          style={{
+            background: "var(--teal)",
+            border: "14px solid var(--ink)",
+            boxShadow: "22px 22px 0 var(--yellow)",
+          }}
+        ></div>
       </section>
 
       {/* About Section */}
@@ -261,6 +265,15 @@ function App() {
             >
               <span className="contact-icon">🐙</span>
               <span>GitHub</span>
+            </a>
+            <a
+              href="https://wa.me/254707297649"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-card"
+            >
+              <span className="contact-icon">💬</span>
+              <span>WhatsApp: 0707297649</span>
             </a>
             <a href="#contact" className="contact-card">
               <span className="contact-icon">📄</span>
