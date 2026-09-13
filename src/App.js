@@ -5,7 +5,7 @@ import {
   faCar,
   faHome,
   faEnvelope,
-  faReact,
+  // faReact,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -123,7 +123,7 @@ function App() {
           <div className="skills-grid">
             <div className="skill-card">
               <div className="skill-icon">
-                <FontAwesomeIcon icon={faReact} />
+                {/* <FontAwesomeIcon icon={faReact} /> */}
               </div>
               <h3>React</h3>
               <p>Component-based architecture, hooks, state management</p>
