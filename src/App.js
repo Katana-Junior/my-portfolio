@@ -1,5 +1,15 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faCar,
+  faHome,
+  faEnvelope,
+  faReact,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(faCar, faHome, faEnvelope);
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -112,24 +122,26 @@ function App() {
           <h2 className="section-title">Skills & Expertise</h2>
           <div className="skills-grid">
             <div className="skill-card">
-              <div className="skill-icon">📦</div>
+              <div className="skill-icon">
+                <FontAwesomeIcon icon={faReact} />
+              </div>
               <h3>React</h3>
               <p>Component-based architecture, hooks, state management</p>
             </div>
             <div className="skill-card">
-              <div className="skill-icon">✨</div>
+              <div className="skill-icon"></div>
               <h3>JavaScript</h3>
               <p>
                 ES6+, async/await, DOM manipulation, responsive interactions
               </p>
             </div>
             <div className="skill-card">
-              <div className="skill-icon">🎨</div>
+              <div className="skill-icon"></div>
               <h3>CSS & HTML</h3>
               <p>Flexbox, Grid, animations, responsive design, accessibility</p>
             </div>
             <div className="skill-card">
-              <div className="skill-icon">🛠️</div>
+              <div className="skill-icon"></div>
               <h3>Tools & DevOps</h3>
               <p>Git, npm, webpack, debugging, browser DevTools</p>
             </div>
